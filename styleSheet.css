@@ -1,0 +1,403 @@
+/*
+Author: Mmasello Kekana
+Date: 09/07/2025 
+File Name: styleSheet.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+  margin: 0; 
+  padding: 0; 
+  border: 0;
+}
+
+/* Fonts */
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* General Styles */
+body {
+  background-color: #f5f5f5;
+}
+
+img {
+  max-width: 100%; 
+  display: block;
+}
+
+/* Hide tab-desk on mobile */
+.tab-desk {
+  display: block; 
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: black;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  color: ivory;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 190px;
+}
+
+header h1 { 
+  font-family: 'DM Serif Display', serif;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+  background-color: #e5e9fc;
+  color: #373684;
+  border-radius: 5px;
+}
+
+/* Hero Image */
+#hero {
+  width: 100%;
+  text-align: center;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* Main Styles */
+main {
+  padding: 2%;
+  background-color: #e5e9fc; 
+  overflow: auto;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.1em;
+} 
+
+main p { 
+  font-size: 1.25em; 
+}
+
+main h3 {
+  font-size: 1.5em;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
+}
+
+/* Action Text */
+.action {
+  font-size: 1.25em; 
+  color: #373684; 
+  font-weight: bold;
+}
+
+/* Info Section */
+#info {
+  clear: left;
+  background-color: #c0caf7; 
+  padding: 1% 2%;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+/* Round Image Class */
+.round {
+  border-radius: 8px;
+}
+
+/* Product Image Fix */
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Contact Page */
+#contact {
+  text-align: center; 
+}
+
+#contact .email-link {
+  color: #4645a8;
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+/* Tel Link */
+.tel-link {
+  background-color: #373684; 
+  padding: 2%; 
+  margin: 0 auto;
+  width: 80%;
+  text-align: center; 
+  border-radius: 5px;
+} 
+
+.tel-link a { 
+  color: #fff;
+  text-decoration: none; 
+  font-size: 1.5em; 
+  display: block;
+}
+
+/* Email Link */
+.email-link {
+  color: #373684;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Map Styling */
+.map { 
+  border: 5px solid #373684; 
+  width: 95%;
+  height: 50%;
+}
+
+/* Hours Class */
+.hours {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* External Link */
+.external-link {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.external-link::after {
+  content: " 🔗";
+}
+
+/* Footer */
+footer {
+  text-align: center; 
+  font-size: 0.65em; 
+  clear: left;
+} 
+
+footer a { 
+  color: #4645a8; 
+  text-decoration: none; 
+}
+
+/* Mobile View */
+@media only screen and (max-width: 430px) {
+  header img {
+    width: 80px;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.2em;
+  }
+
+  nav {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  nav li a {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  main, footer {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  figure {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  figure img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav li a {
+    font-size: 1.3em;
+  }
+
+  main {
+    font-size: 1.1em;
+    padding: 2%;
+  }
+
+  figure {
+    width: 45%;
+    display: inline-block;
+    margin: 2%;
+    vertical-align: top;
+  }
+
+  figure img {
+    width: 100%;
+  }
+
+  /* 🆕 Product Grid for Tablets */
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .product {
+    flex: 1 1 calc(48% - 10px);
+    box-sizing: border-box;
+  }
+}
+
+/* Nest Hub View (Optional) */
+@media only screen and (min-width: 900px) and (max-width: 1050px) and (max-height: 700px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer {
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .map {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1025px) {
+  header {
+    padding: 2%;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  #info ul {
+    margin-left: 5%;
+  }
+
+  #piano, #guitar, #violin {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+
+  #piano, #guitar, #violin {
+    float: none;
+    width: 100%;
+    margin: 1em 0;
+  }
+}
